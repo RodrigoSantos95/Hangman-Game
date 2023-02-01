@@ -23,12 +23,18 @@ body {
     padding: 0.5rem;
     background-color: rgb(42, 80, 202);
     color: antiquewhite;
+    border-radius: 10px;
 }
 
 .btn-new-word {
     font-size: 2rem;
     padding: 0.5rem;
     background-color: rgba(230, 235, 185, 0.651);
+    border-radius: 10px;
+}
+
+#container-canvas {
+    text-align: center;
 }
 
 #footer {
