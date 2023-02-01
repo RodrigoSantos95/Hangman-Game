@@ -7,18 +7,19 @@
     <title>Hangman - Jogo da Forca</title>
     <link rel="icon" href="images/iconHangman.png">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div>
-        <h1>Hangman - Jogo da Forca</h1>
+    <div id="container-h1">
+        <h1 id="headline">Hangman - Jogo da Forca</h1>
     </div>
+    <section id="container-canvas">
+        <canvas id="canvas" width="1000" height="400"></canvas>
+    </section>
     <section id="btn">
         <button class="btn-inicio">Começar a jogar</button>
         <button class="btn-new-word">Adicionar nova palavra</button>
-    </section>
-    <section id="container-canvas">
-        <canvas id="canvas" width="1200" height="800"></canvas>
     </section>
     <footer id="footer">Rodrigo Santos &copy;</footer>
 </body>
