@@ -12,7 +12,7 @@ body {
     font-size: 3.5rem;
 }
 
-#btn {
+.btn-home {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-end;
