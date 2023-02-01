@@ -8,7 +8,7 @@
     <link rel="icon" href="images/iconHangman.png">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
-    <script src="script.js" defer></script>
+    <script type="text/javascript" src="script.js" defer></script>
 </head>
 <body>
     <div id="container-h1">
@@ -20,10 +20,10 @@
             <button class="btn-new-word">Adicionar nova palavra</button>
         </a>
     </div>
-    <div id="aparece-forca">
-        <section id="container-canvas">
-            <canvas id="canvas" width="1000" height="400"></canvas>
-        </section>
+    <div id="aparece-forca" class="canvas">
+        <canvas id="forca" width="1000px" height="400px"></canvas>
+        <div class="sublinhado">
+        </div>
     </div>
     <footer id="footer">Rodrigo Santos &copy;</footer>
 </body>
