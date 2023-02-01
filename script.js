@@ -1,3 +1,3 @@
-function iniciarJogo () {
-    document.querySelector("div-desaparece").style.display = "none";
+function iniciarJogo() {
+    document.querySelector("#div-desaparece").style.display = "none";
 }
