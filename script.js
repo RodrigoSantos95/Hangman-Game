@@ -9,6 +9,8 @@ function setPalavraSecreta () {
 
 function iniciarJogo() {
     document.querySelector("#div-desaparece").style.display = "none";
+    document.querySelector("#container-h1").style.display = "none";
     setPalavraSecreta();
     desenharCanvas();
+    desenharLinhas();
 }
