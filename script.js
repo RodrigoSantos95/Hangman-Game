@@ -5,10 +5,10 @@ let palavraSecreta = "";
 function setPalavraSecreta () {
     let palavra = palavras[Math.floor(Math.random() * palavras.length)];
     palavraSecreta = palavra;
-    console.log(palavraSecreta)
 }
 
 function iniciarJogo() {
     document.querySelector("#div-desaparece").style.display = "none";
     setPalavraSecreta();
+    desenharCanvas();
 }

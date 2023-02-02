@@ -1,9 +1,8 @@
 body {
-    background-color: rgba(149, 214, 152, 0.404);
+    background-color: rgba(211, 219, 132, 0.404);
 }
 
 #container-h1 {
-    padding-bottom: 1rem;
     text-align: center;
 }
 
@@ -21,9 +20,15 @@ body {
 .btn-inicio {
     font-size: 2rem;
     padding: 0.5rem;
-    background-color: rgb(42, 80, 202);
+    background-color: rgba(67, 214, 116, 0.623);
     color: antiquewhite;
     border-radius: 10px;
+}
+
+.btn-inicio:hover {
+    font-size: 2.5rem;
+    background-color: rgba(74, 199, 49, 0.705);
+    transition: 1s;
 }
 
 .btn-new-word {
@@ -33,7 +38,13 @@ body {
     border-radius: 10px;
 }
 
-#container-canvas {
+.btn-new-word:hover {
+    font-size: 2.5rem;
+    background-color: rgba(216, 185, 47, 0.705);
+    transition: 1s;
+}
+
+.canvas {
     text-align: center;
 }
 
