@@ -98,7 +98,12 @@ function desenharForca () {
             tabuleiro.closePath()
         break;
 
-        case
+        case 8:
+            tabuleiro.moveTo(700,200)
+            tabuleiro.lineTo(720,220)
+            tabuleiro.stroke()
+            tabuleiro.closePath()
+        break;
 
     }
     
