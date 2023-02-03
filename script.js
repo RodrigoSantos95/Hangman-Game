@@ -50,7 +50,7 @@ function iniciarJogo() {
             desenharForca()
         }if(letrasErradas.length == 9) {
             alert("Fim de jogo! Tente novamente!")
-            document.querySelector(".canvas").style.display = "none"
+            
             atualizarJogo()
         }
     }
