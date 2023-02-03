@@ -29,3 +29,13 @@ function desenharLinhas() {
     tabuleiro.stroke();
     tabuleiro.closePath();
 }
+
+function escreverLetra(index) {
+    tabuleiro.font = "bold 52px Itim";
+    tabuleiro.lineCap = "round";
+    tabuleiro.fillStyle = "#0A3871";
+    tabuleiro.lineWidth = 6;
+    let largura = 600/palavraSecreta.length;
+    tabuleiro.fillText(palavraSecreta[index],505+(largura*index), 320);
+}
+

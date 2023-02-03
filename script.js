@@ -16,7 +16,7 @@ function verificarLetra(key) {
     }else{
         estado = true;
         letras.push(key);
-        return
+        return estado;
     }
 }
 
@@ -35,7 +35,7 @@ function iniciarJogo() {
                 if(palavraSecreta[i] === letra) {
                     escreverLetra(i);
                 }else{
-                    mostrarLetra();
+                    
                 }
             }
         }
