@@ -2,6 +2,7 @@ let palavras = ["RACE", "SOCCER", "BRASIL", "JAVASCRIPT", "REACT", "HTML"];
 let tabuleiro = document.querySelector("#forca").getContext("2d");
 let palavraSecreta = ""; 
 let letras = [];
+let letrasErradas = [];
 let erros = 8;
 
 function setPalavraSecreta () {
@@ -39,11 +40,22 @@ function iniciarJogo() {
             for(let i=0; i < palavraSecreta.length; i++) {
                 if(palavraSecreta[i] === letra) {
                     escreverLetra(i);
+                    letras.push(i)
                 }
             }
         }else{
             adicionarLetraErrada(letra);
             escreverLetraErrada(letra, erros);
+            letrasErradas.push(letra)
+            desenharForca()
+        }if(letrasErradas.length == 9) {
+            alert("Fim de jogo! Tente novamente!")
+            document.querySelector(".canvas").style.display = "none"
+            atualizarJogo()
         }
     }
 }
+
+/*function atualizarJogo() {
+    desenharForca()
+}*/
