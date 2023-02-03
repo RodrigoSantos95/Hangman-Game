@@ -2,6 +2,7 @@ let palavras = ["RACE", "SOCCER", "BRASIL", "JAVASCRIPT", "REACT", "HTML"];
 let tabuleiro = document.querySelector("#forca").getContext("2d");
 let palavraSecreta = ""; 
 let letras = [];
+let erros = 8;
 
 function setPalavraSecreta () {
     let palavra = palavras[Math.floor(Math.random() * palavras.length)];
@@ -20,6 +21,10 @@ function verificarLetra(key) {
     }
 }
 
+function adicionarLetraErrada() {
+    erros -= 1;
+}
+
 function iniciarJogo() {
     document.querySelector("#div-desaparece").style.display = "none";
     document.querySelector("#container-h1").style.display = "none";
@@ -34,10 +39,11 @@ function iniciarJogo() {
             for(let i=0; i < palavraSecreta.length; i++) {
                 if(palavraSecreta[i] === letra) {
                     escreverLetra(i);
-                }else{
-                    
                 }
             }
+        }else{
+            adicionarLetraErrada(letra);
+            escreverLetraErrada(letra, erros);
         }
     }
 }
