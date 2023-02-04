@@ -42,10 +42,7 @@ function iniciarJogo() {
                 if(palavraSecreta[i] === letra) {
                     escreverLetra(i);
                     letras.push(i)
-                    console.log(palavraSecreta)
-                    console.log(letras)
                     acertos++
-                    console.log(acertos)
                 }
             }
         }else{
