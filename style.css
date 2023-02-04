@@ -31,19 +31,6 @@ body {
     transition: 1s;
 }
 
-.btn-new-word {
-    font-size: 2rem;
-    padding: 0.5rem;
-    background-color: rgba(230, 235, 185, 0.651);
-    border-radius: 10px;
-}
-
-.btn-new-word:hover {
-    font-size: 2.5rem;
-    background-color: rgba(216, 185, 47, 0.705);
-    transition: 1s;
-}
-
 .canvas {
     text-align: center;
 }

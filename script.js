@@ -1,4 +1,4 @@
-let palavras = ["RACE", "SOCCER", "BRASIL", "JAVASCRIPT", "REACT", "HTML"];
+let palavras = ["RACE", "MEXICO", "BRASIL", "JOSEFINA", "REACT", "HTML"];
 let tabuleiro = document.querySelector("#forca").getContext("2d");
 let palavraSecreta = ""; 
 let letras = [];
@@ -72,6 +72,6 @@ function iniciarJogo() {
     }
 }
 
-function checarJogo() {
-
+function reiniciarJogo() {
+    window.location.reload()
 }
