@@ -4,6 +4,7 @@ let palavraSecreta = "";
 let letras = [];
 let letrasErradas = [];
 let erros = 8;
+let acertos =0;
 
 function setPalavraSecreta () {
     let palavra = palavras[Math.floor(Math.random() * palavras.length)];
@@ -43,6 +44,8 @@ function iniciarJogo() {
                     letras.push(i)
                     console.log(palavraSecreta)
                     console.log(letras)
+                    acertos++
+                    console.log(acertos)
                 }
             }
         }else{
@@ -54,12 +57,13 @@ function iniciarJogo() {
         let mensagem = ""
 
         if(letrasErradas.length == 9) {
-           mensagem = "Fim de Jogo! Você perdeu!"
+           mensagem = "Fim de Jogo! Você perdeu!";
+           document.onkeydown = null;
             
-        }if(verificarLetra(letra) && palavraSecreta.includes(letra)) {
-            for(let i=0; i <= palavraSecreta.length; i++){
-                mensagem = "Parabéns, você acertou!"
-            }
+        }
+        if(acertos == palavraSecreta.length) {
+            mensagem = "Parabéns, você acertou a palavra!";
+            document.onkeydown = null;
         }
         if(mensagem) {
             document.querySelector("#mensagem").innerHTML = mensagem
