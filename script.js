@@ -1,4 +1,4 @@
-let palavras = ["RACE", "MEXICO", "BRASIL", "JOSEFINA", "REACT", "HTML"];
+let palavras = ["RACE", "COMPUTER", "BRASIL", "TRAVEL", "REACT", "HTML"];
 let tabuleiro = document.querySelector("#forca").getContext("2d");
 let palavraSecreta = ""; 
 let letras = [];
