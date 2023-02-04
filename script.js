@@ -41,6 +41,8 @@ function iniciarJogo() {
                 if(palavraSecreta[i] === letra) {
                     escreverLetra(i);
                     letras.push(i)
+                    console.log(palavraSecreta)
+                    console.log(letras)
                 }
             }
         }else{
@@ -48,14 +50,24 @@ function iniciarJogo() {
             escreverLetraErrada(letra, erros);
             letrasErradas.push(letra)
             desenharForca()
-        }if(letrasErradas.length == 9) {
-            alert("Fim de jogo! Tente novamente!")
+        }
+        let mensagem = ""
+
+        if(letrasErradas.length == 9) {
+           mensagem = "Fim de Jogo! Você perdeu!"
             
-            atualizarJogo()
+        }if(verificarLetra(letra) && palavraSecreta.includes(letra)) {
+            for(let i=0; i <= palavraSecreta.length; i++){
+                mensagem = "Parabéns, você acertou!"
+            }
+        }
+        if(mensagem) {
+            document.querySelector("#mensagem").innerHTML = mensagem
+            document.querySelector(".popup-container").style.display = "flex"
         }
     }
 }
 
-/*function atualizarJogo() {
-    desenharForca()
-}*/
+function checarJogo() {
+
+}

@@ -48,6 +48,38 @@ body {
     text-align: center;
 }
 
+.popup-container {
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   display: none;
+   align-items: center;
+   justify-content: center;
+}
+
+.popup {
+    background: rgba(48, 111, 153, 0.705);
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+#mensagem {
+    font-family: 'Itim', cursive;
+    color: beige;
+}
+
+.btn-reiniciar {
+    cursor: pointer;
+    border: 0;
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 1rem;
+}
+
 #footer {
+    font-family: 'Itim', cursive;
     text-align: center;
 }
