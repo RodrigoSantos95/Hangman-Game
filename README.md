@@ -17,4 +17,6 @@ If the letters match the correct word, congratulations!
 
 Otherwise, the letters didn't match and you can try just pressing the button under the message.
 ![page-lose](https://user-images.githubusercontent.com/107283450/216788477-fdea5a28-dcad-4b51-983d-0463157a9a4e.png)
+
+You can access the game [here](https://rodrigosantos95.github.io/Hangman-Game/)
 ##
